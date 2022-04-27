@@ -1,7 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Println("Hello, world.")
+	for i := 1; i <= 25; i++ {
+		time.Sleep(time.Minute)
+		fmt.Printf("WORKING %d/25\n", i)
+	}
+
+	for i := 1; i <= 5; i++ {
+		time.Sleep(time.Minute)
+		fmt.Printf("RESTING %d/5\n", i)
+	}
+
 }
